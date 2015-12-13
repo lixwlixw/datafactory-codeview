@@ -84,13 +84,13 @@
 | 82 | Cakephp-example | CakePHP framework quickstart repo |  | PHP | |
 | 83 | Ruby-buildpack-ubuntu |  forked from bparees/ruby-buildpack-ubuntu | An STI base image for buildpack-based applications. | Shell | |
 | 84 | Capedwarf-example |  forked from capedwarf/capedwarf-openshift | CapeDwarf OpenShift QuickStart example | Shell | |
-| 85 | Magento-example |  forked from namduong/magento-example | QuickStart Magento on OpenShift Magento eCommerce Platforms provide the scalability, flexibility and features for business growth. | PHP | |
+| 85 | Magento-example |  forked from namduong/magento-example | QuickStart Magento on OpenShiftF Magento eCommerce Platforms provide the scalability, flexibility and features for business growth. | PHP | |
 | 86 | Openshift-httpd-cartridge-broken | A simple httpd cartridge that comes with lots of common bugs and errors (so you can practice fixing them) |  | Shell | |
 | 87 | Downloadable-mock | Mock downloadable cartridge |  | Shell | |
 | 88 | Downloadable-mock-plugin | Mock downloadable plugin cartridge |  | Shell | |
-| 89 | Openshift-diy-binhello-demo | Demo application on OpenShift | How to use DIY applications to run custom C based servers |  | C | |
+| 89 | Openshift-diy-binhello-demo | Demo application on OpenShift  How to use DIY applications to run custom C based servers |  | C | |
 | 90 | Rails-example | Rails QuickStart application for deployment on OpenShift |  forked from gshipley/rails-openshift-quickstart | Ruby | |
-| 91 | kitchensink-example | Demo application on OpenShift | Kitchensink quickstart shows off all the new features of Java EE 6, and makes a great starting point for your project. |  | Java | |
+| 91 | kitchensink-example | Demo application on OpenShift  Kitchensink quickstart shows off all the new features of Java EE 6, and makes a great starting point for your project. |  | Java | |
 | 92 | Docker-cartridge-examples | Examples of how OpenShift Docker cartridges might be created |  | Shell | |
 | 93 | jboss-eap6-modules | Modules used in the OpenShift environment added to the JBossEAP6 server install |  |  | |
 | 94 | brewpoll | OpenShift app for querying tags in a brew/koji repository in order to see if changes are being made upstream for packages one may care about. |  forked from dobbymoodge/brewpoll | Python | |
