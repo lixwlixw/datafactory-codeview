@@ -1,0 +1,30 @@
+测试分为三种测试
+- 命令行测试
+- master controller测试
+- 端到端测试
+
+/$root/test/cmd 测试命令行相关命令正确执行和正确输出（比如期望oc get dc 正确执行，oc get dc -o yaml期望输出包含某些字段）
+   1. 测试到的命令 oadm,build,deploy,edit,export,newapp,policy,secrets,template,volumes
+   添加backingservice测试示例: 新建backingservice.sh，验证oc命令行bs相关命令os::cmd::expect_success 'oc get bs'
+
+/$root/test/end-to-end 测试创建project,router,registry正常运行，新建应用，用户，验证登录和权限
+   1. 测试一个使用openshift examples/sample-app完整流程
+   添加backingservice测试示例: 添加examples/backingservice完整流程（在sample-app端到端测试的基础上测试backingservice相关功能(oc create -f backingservice.json; 创建backingservice instance, 然后instance和app做binding)）
+
+/$root/test/fixtures i测试相关的json yaml文件
+
+/$root/test/integration
+   1. 测试auth_proxy,basic_auth,build,deploy_trigger,dns,dockerregistryclient,groups,imagestream,login,nodeauth,project,router,service_account,template
+   添加backingservice测试示例: 添加backingservice相关功能单元测试(backingservice,instance,bindings的创建，修改，读取，删除；)使用到的master server 可以使用util里的server mock
+
+/$root/test/extended 测试authentication,builds,cli,images,job,networking,router,security相关
+   1. authentication.sh （default master config with router, registry installed) 测试认证
+   2. cmd.sh (default master config without router, registry ) 测试命令行
+   3. core.sh（default master config with router, registry installed) 运行所有测试
+
+/$root/test/old-start-configs 测试老版本配置是否适用服务
+
+/$root/test/template (go unit test )测试和template 相关功能
+
+/$root/test/util 测试所需的mock ( server, docker, etcd, ldap, policy)
+   添加backingservice测试示例: 创建backingservice相关的mock
